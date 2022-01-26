@@ -150,7 +150,7 @@ footer{
         width: 80%;
         margin: 0 auto;
     }
-    .photogarphy, .accessorieses, .applegadgets{
+    .photogarphy, .accessories, .applegadgets,footer{
         grid-template-columns: repeat(1, 1fr);
     }
     .description, .accessories, .gadgets{
@@ -162,7 +162,7 @@ footer{
     .container{
         width: 100%;
     }
-    .photogarphy, .accessorieses, .applegadgets,footer{
+    .photogarphy, .accessories, .applegadgets,footer{
         grid-template-columns: repeat(1, 2fr);
     }
     .description, .accessories, .gadgets{
