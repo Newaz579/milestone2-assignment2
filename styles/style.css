@@ -1,0 +1,171 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #AEAEAE;
+}
+main{
+    padding-left: 75px;
+    padding-right: 200px;
+    
+}
+.container{
+    height: 100%px;
+    width: 1200px;
+    background-color: #FFFFFF;
+    margin-top: 0%;
+}
+.nav-1{
+    padding-top: 10px;
+    padding-left: 100px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.photogarphy{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+}
+.description{
+    width: 300px;
+    height: 270px;
+}
+.fontsize{
+    font-size: 30px;
+    font-weight: 700;
+}
+.button-design{
+    width: 100px;
+    height: 30px;
+    background-image: linear-gradient(#E02C6D, #991444);
+    border-radius: 10px;
+}
+.camera{
+    width: 400px;
+    height: 400px;
+}
+.camera{
+    transition: transform 5s ease-in-out;
+}
+.photogarphy>.camera:hover {
+    transform: scale(1) rotate(90deg);
+}
+.camera img{
+    width: 300px;
+    height: 350px
+}
+.photography-accessories{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.accessorieses{
+    width: 1047px;
+    height: 1662px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.accessories{
+    height: 500px;
+    width: 350px;
+
+}
+.img-size{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 0;
+}
+.accessories-name{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.prize{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.fa-star{
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.description{
+    font-size: 14px;
+    color: #787885;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.corner{
+    width: 100%;
+    height: 30px;
+    color: #E02C6D;
+    padding-left: 260%; 
+}
+.applegadgets{
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.applegadgets>.gadgets img{
+    width: 300px;
+    height: 250px;
+}
+.gedgets-description{
+    width: 400px;
+    height: 250px;
+    margin-left: 30px;
+}
+footer{
+    margin: 0px;
+    width: 100%;
+    color: white;
+    background-color: #000080;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 37px;
+}
+.fab.fab-pad{
+    padding-left: 30px;
+    font-size: 30px;
+}
+@media only screen and (max-width:688px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .photogarphy, .accessorieses, .applegadgets{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .description, .accessories, .gadgets{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .photogarphy, .accessorieses, .applegadgets,footer{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .description, .accessories, .gadgets{
+        flex-direction: column;
+    }
+}
